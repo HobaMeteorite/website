@@ -12,6 +12,17 @@ body {
     background-size: 100vw 100%;
 }
 
+noscript {
+    background-color: var(--color4);
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    position: fixed;
+    color: var(--color5);
+    font-weight: bold;
+    font-size: 2em;
+    z-index: 100;
+}
+
 h1, h2, p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -122,14 +133,43 @@ header {
 }
 
 .project-ecosystem {
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 .p-e-container {
     width: 50vw;
-    height: 65vh;
+    height: auto;
+    padding: 15px 20px 15px 20px;
+    color: var(--color1);
     background-color: white;
     position: absolute;
     top: 120vh;
     border-radius: 30px;
+    font-size: 1.2em;
+}
+
+
+/*================================ RESPONSIVE ================================*/
+
+@media (max-width: 1000px) {
+    .main-title {
+        font-size: 14vw;
+    }
+    .connect {
+        width: 300px;
+        font-size: 2em;
+    }
+    .p-e-container {
+        width: 80vw;
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-title {
+        font-size: 13vw;
+    }
+    .hoba-png {
+        height: 40vh;
+    }
 }
