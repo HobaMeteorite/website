@@ -1,0 +1,135 @@
+:root {
+    --color1: #00031e;
+    --color2: #231c50;
+    --color3: #444061;
+    --color4: #8c5edd;
+    --color5: #FFF;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(225deg, var(--color1) 0%, var(--color2) 100%);
+    background-size: 100vw 100%;
+}
+
+h1, h2, p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.wallet {
+    width: 100%;
+}
+
+.connect {
+    width: 200px;
+    padding: 10px;
+    color: var(--color5);
+    background-color: var(--color4);
+    border: 2px solid var(--color5);
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1em;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.user-wallet {
+    border: 1px solid var(--color5);
+    width: 375px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--color2);
+    box-shadow: 3px 3px 10px var(--color5);
+    position: fixed;
+    top: 20px;
+    right: 80px;
+    display: none;
+    z-index: 3;
+}
+
+.user-wallet-id {
+    display: inline;
+    color: var(--color5);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.disconnect {
+    display: none;
+    position: fixed;
+    top: 52px;
+    right: 65px;
+    padding: 3px 5px 3px 5px;
+    font-weight: bold;
+    color: var(--color5);
+    background-color: var(--color1);
+    box-shadow: 1px 1px 10px var(--color5);
+    border: 1px solid var(--color5);
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 4;
+
+}
+
+.main-title {
+    color: var(--color5);
+    text-shadow: 1px 1px 5px var(--color2),
+                 1px 1px 10px var(--color4),
+                 5px 5px 50px var(--color1);
+    font-size: 10vw;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    margin-left: 1%;
+    z-index: 2;
+}
+
+.main-title::selection {
+    color: var(--color4);
+    background-color: none;
+}
+
+.hoba-png {
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.section {
+    height: 100vh;
+}
+
+.section1 {
+    color: var(--color5);
+    display: flex;
+    justify-content: center;
+}
+
+.project-ecosystem {
+    font-size: 3em;
+}
+
+.p-e-container {
+    width: 50vw;
+    height: 65vh;
+    background-color: white;
+    position: absolute;
+    top: 120vh;
+    border-radius: 30px;
+}
